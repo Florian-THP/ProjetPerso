@@ -10,7 +10,7 @@
 
 <body>
     <div class="repartition_div">
-        <div class="choixUn" id="toggleButton" role="button">
+        <div class="choixUn" id="toggleButton1" role="button">
             <div class="containerChoix">
                 <h1 class="motgris">Présence</h1>
                 <img class="flecheRight" src="img/flecheDroite.png">
@@ -21,7 +21,7 @@
                 omnis non recusandae temporibus minus laudantium optio sit dolor veritatis. Aperiam eligendi modi
                 voluptas beatae at.</p>
         </div>
-        <div class="choixDeux">
+        <div class="choixDeux" id="toggleButton2" role="button">
             <div class="containerChoix">
                 <h1 class="motgris">Bulletin</br>Inscription</h1>
                 <img class="flecheRight" src="img/flecheDroite.png">
@@ -32,15 +32,15 @@
 
     <div class="formPres" id="presformDiv">
         <div class="menuPres">
-            <img id="closeButton" src="img/close.png">
+            <img id="closeButton1" src="img/close.png">
         </div>
         <div class="content">
             <div class="datetimeDiv">
                 <div class="dateDiv">
-                    <p id="date"></p>
+                    <p id="dateForm1"></p>
                 </div>
                 <div class="timeDiv">
-                    <p id="time"></p>
+                    <p id="timeForm1"></p>
                 </div>
             </div>
             <div class="adDiv">
@@ -78,8 +78,56 @@
                 </button>
             </div>
         </div>
+    </div>
 
-
+    <div class="formInscrit" id="inscritformDiv">
+        <div class="menuPres">
+            <img id="closeButton2" src="img/close.png">
+        </div>
+        <div class="content">
+            <div class="datetimeDiv">
+                <div class="dateDiv">
+                    <p id="dateForm2"></p>
+                </div>
+                <div class="timeDiv">
+                    <p id="timeForm2"></p>
+                </div>
+            </div>
+            <div class="adDiv">
+                <div class="nameDiv">
+                    <form class="form">
+                        <label class="label">JE SUIS DIFERENT </label>
+                        <input class="name_input" placeholder="N° adhérent">
+                    </form>
+                </div>
+            </div>
+            <div class="nameDiv">
+                <form class="form">
+                    <label class="label">Nom : </label>
+                    <input class="name_input" placeholder="Votre Nom">
+                </form>
+            </div>
+            <div class="nameDiv">
+                <form class="form">
+                    <label class="label">Prénom : </label>
+                    <input class="name_input" placeholder="Votre Prénom">
+                </form>
+            </div>
+            <div class="commentDiv">
+                <form class="form">
+                    <label class="label">Un commentaire ? </label>
+                    <textarea class="comment_input" rows="5" cols="35"
+                        placeholder="Laissez nous un mot ou un commentaires ici !">
+                    </textarea>
+                </form>
+            </div>
+            <div class="btnValideDiv">
+                <button class="btnValide">
+                    Confirmer ta présence
+                    <img class="flecheRightBtn" src="img/flecheDroite.png">
+                </button>
+            </div>
+        </div>
     </div>
 
 </body>

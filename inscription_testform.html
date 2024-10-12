@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulletin d'adhésion CircoGraphe</title>
+</head>
+<body>
+    <h1>Bulletin d'adhésion - Année 2024</h1>
+    
+    <form action="#" method="POST">
+        <!-- Nom et prénom -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+        <br>
+
+        <!-- Date de naissance -->
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance" required>
+        <br>
+
+        <!-- Adresse -->
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" required>
+        <br>
+
+        <label for="code_postal">Code postal :</label>
+        <input type="text" id="code_postal" name="code_postal" required>
+        <br>
+
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" required>
+        <br>
+
+        <label for="pays">Pays :</label>
+        <input type="text" id="pays" name="pays" required>
+        <br>
+
+        <!-- Téléphone et email -->
+        <label for="telephone">Numéro de téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+        <br>
+
+        <label for="email">Adresse mail (en majuscule) :</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <!-- Profession -->
+        <label for="profession">Profession :</label>
+        <select id="profession" name="profession" required>
+            <option value="etudiant">Étudiant.e</option>
+            <option value="intermittent">Intermittent.e du spectacle</option>
+            <option value="employe">Employé.e</option>
+            <option value="artisan">Artisan</option>
+            <option value="cadre">Cadre</option>
+            <option value="fonctionnaire">Fonctionnaire</option>
+            <option value="liberale">Libérale</option>
+            <option value="sans_emploi">Sans emploi</option>
+            <option value="retraite">Retraité.e</option>
+            <option value="autre">Autre</option>
+        </select>
+        <br>
+
+        <label for="specialite">Spécialité ou discipline(s) pratiquée(s) :</label>
+        <input type="text" id="specialite" name="specialite">
+        <br>
+
+        <!-- Autorisation de droit à l'image -->
+        <p>Autorisation de droit à l'image :</p>
+        <label for="droit_image_oui">OUI</label>
+        <input type="radio" id="droit_image_oui" name="droit_image" value="oui" required>
+        <label for="droit_image_non">NON</label>
+        <input type="radio" id="droit_image_non" name="droit_image" value="non">
+        <br>
+
+        <!-- Participation au projet -->
+        <p>Si le projet vous intéresse :</p>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Je souhaite m'inscrire à la newsletter</label>
+        <br>
+
+        <input type="checkbox" id="investir" name="investir">
+        <label for="investir">Je souhaite m'investir dans le projet</label>
+        <br>
+
+        <input type="checkbox" id="soutien_financier" name="soutien_financier">
+        <label for="soutien_financier">Je souhaite soutenir financièrement le projet (cagnotte en ligne)</label>
+        <br>
+
+        <!-- Type d'adhésion -->
+        <p>J’adhère au CircoGraphe pour :</p>
+        <select id="adhesion" name="adhesion" required>
+            <option value="cirque">Cirque (10€ plein / 7€ réduit)</option>
+            <option value="graff">Graff (libre)</option>
+            <option value="soutien">Soutien à l’association (libre)</option>
+        </select>
+        <br>
+
+        <!-- Paiement -->
+        <p>Paiement :</p>
+        <select id="paiement" name="paiement" required>
+            <option value="especes">Espèces</option>
+            <option value="cb">Carte bancaire</option>
+            <option value="cheque">Chèque</option>
+        </select>
+        <br>
+
+        <!-- Signature -->
+        <label for="date_signature">Fait à (ville) :</label>
+        <input type="text" id="date_signature" name="date_signature" required>
+        <br>
+
+        <label for="date">Le :</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+
+        <label for="signature">Signature :</label>
+        <input type="text" id="signature" name="signature" required>
+        <br>
+
+        <!-- Bouton de soumission -->
+        <button type="submit">Envoyer le formulaire</button>
+    </form>
+</body>
+</html>
