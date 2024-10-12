@@ -1,66 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
+
 <body>
-   <div class="choixUn" id="toggleButton" role="button">
-    <div class="containerChoix">
-    <h1 class="motgris">Présence</h1>
-    <img class="flecheRight" src="img/flecheDroite.png">
-    </div>
-   </div>
-
-   <div class="choixDeux">
-    <div class="containerChoix">
-    <h1 class="motgris">Inscription</h1>
-    <img class="flecheRight" src="img/flecheDroite.png">
-   </div>
-   </div>
-
-
-
-   <div class="formPres" id="formDiv">
-    <div class="menuPres">
-        <img id="closeButton" src="img/close.png">
-    </div>
-    <div class="content">
-        <div class="adDiv">
-            <form class="form">
-                <label class="label">N° ADHERENT : </label>
-                <input class="name_input" placeholder="000000">
-            </form>
+    <div class="repartition_div">
+        <div class="choixUn" id="toggleButton" role="button">
+            <div class="containerChoix">
+                <h1 class="motgris">Présence</h1>
+                <img class="flecheRight" src="img/flecheDroite.png">
+            </div>
         </div>
-        <div class="nameDiv">
-            <form class="form">
-                <label class="label">Nom : </label>
-                <input class="name_input" placeholder="Votre Nom">
-            </form>
+        <div class="text_presentation">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eos, quisquam aspernatur nostrum consequatur
+                omnis non recusandae temporibus minus laudantium optio sit dolor veritatis. Aperiam eligendi modi
+                voluptas beatae at.</p>
         </div>
-        <div class="nameDiv">
-            <form class="form">
-                <label class="label">Prénom : </label>
-                <input class="name_input" placeholder="Votre Prénom">
-            </form>
+        <div class="choixDeux">
+            <div class="containerChoix">
+                <h1 class="motgris">Bulletin</br>Inscription</h1>
+                <img class="flecheRight" src="img/flecheDroite.png">
+            </div>
         </div>
-        <div class="btnValideDiv">
-           <button class="btnValide">
-            Validez
-            <img class="flecheRightBtn" src="img/flecheDroite.png">
-           </button>
-        </div>
-        <p class="phraseNo">Vous n'êtes pas encore inscrit ? <a href="#" class="lienInscri">Inscrivez-vous ici !</a></p>
     </div>
 
 
-   </div>
+    <div class="formPres" id="presformDiv">
+        <div class="menuPres">
+            <img id="closeButton" src="img/close.png">
+        </div>
+        <div class="content">
+            <div class="datetimeDiv">
+                <div class="dateDiv">
+                    <p id="date"></p>
+                </div>
+                <div class="timeDiv">
+                    <p id="time"></p>
+                </div>
+            </div>
+            <div class="adDiv">
+                <div class="nameDiv">
+                    <form class="form">
+                        <label class="label">Votre n° d'adhérent </label>
+                        <input class="name_input" placeholder="N° adhérent">
+                    </form>
+                </div>
+            </div>
+            <div class="nameDiv">
+                <form class="form">
+                    <label class="label">Nom : </label>
+                    <input class="name_input" placeholder="Votre Nom">
+                </form>
+            </div>
+            <div class="nameDiv">
+                <form class="form">
+                    <label class="label">Prénom : </label>
+                    <input class="name_input" placeholder="Votre Prénom">
+                </form>
+            </div>
+            <div class="commentDiv">
+                <form class="form">
+                    <label class="label">Un commentaire ? </label>
+                    <textarea class="comment_input" rows="5" cols="35"
+                        placeholder="Laissez nous un mot ou un commentaires ici !">
+                    </textarea>
+                </form>
+            </div>
+            <div class="btnValideDiv">
+                <button class="btnValide">
+                    Confirmer ta présence
+                    <img class="flecheRightBtn" src="img/flecheDroite.png">
+                </button>
+            </div>
+        </div>
+
+
+    </div>
 
 </body>
-  
 
- <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
+
 </html>
